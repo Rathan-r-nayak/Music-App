@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0B1759"
+    android:background="@drawable/bck5"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/songs_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/songs_text"
-        android:textColor="#673AB7"
-        android:text="SONGS"
-        android:textSize="20dp"
-        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
         android:padding="10dp"
-        android:layout_centerHorizontal="true"/>
+        android:text="SONGS"
+        android:textAllCaps="true"
+        android:textColor="#00FFCC"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,7 +31,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:textColor="@color/white"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
         android:layout_height="wrap_content"
         android:layout_below="@id/songs_text"
         android:layout_marginTop="0dp" />

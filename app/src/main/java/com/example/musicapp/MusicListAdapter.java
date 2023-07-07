@@ -1,16 +1,23 @@
 package com.example.musicapp;
 
 
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.security.spec.EllipticCurve;
 import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
@@ -37,10 +44,13 @@ public class MusicListAdapter extends RecyclerView.Adapter<MusicListAdapter.View
         AudioModel songData = songsList.get(position);
         holder.titleTextView.setText(songData.getTitle());
 
+
+
+
         if(MyMediaPlayer.currentIndex==position){
-            holder.titleTextView.setTextColor(Color.parseColor("#FF0000"));
+            holder.titleTextView.setTextColor(Color.parseColor("#FFEB3B"));
         }else{
-            holder.titleTextView.setTextColor(Color.parseColor("#000000"));
+            holder.titleTextView.setTextColor(Color.parseColor("#00FFCC"));
         }
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
