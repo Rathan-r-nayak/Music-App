@@ -12,31 +12,44 @@
         android:id="@+id/songs_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:padding="10dp"
-        android:text="SONGS"
+        android:text="Listen To Your Favorite Songs"
         android:textAllCaps="true"
         android:textColor="#00FFCC"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:textStyle="bold|italic" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/no_songs_text"
+        android:layout_width="21dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
         android:text="NO SONGS FOUND"
         android:textColor="@color/white"
-        android:layout_centerInParent="true"
-        android:visibility="gone"/>
+        android:visibility="gone" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:ellipsize="marquee"
-        android:marqueeRepeatLimit="marquee_forever"
         android:layout_height="wrap_content"
         android:layout_below="@id/songs_text"
-        android:layout_marginTop="0dp" />
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="686dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="About"
+        android:textSize="10sp"
+        app:cornerRadius="50dp" />
 
 
 </RelativeLayout>

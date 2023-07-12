@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    TextView noMusicTextView;
+    TextView TextView_noMusic;
     Button about;
     ArrayList<AudioModel> songsList = new ArrayList<>();
 
@@ -34,7 +34,18 @@ public class MainActivity extends AppCompatActivity {
 
 
         recyclerView = findViewById(R.id.recycler_view);
-        noMusicTextView = findViewById(R.id.no_songs_text);
+        TextView_noMusic = findViewById(R.id.no_songs_text);
+        about=findViewById(R.id.about);
+
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivity.this,AboutUs.class);
+                startActivity(i);
+            }
+        });
+
+
 
         if (checkPermission() == false) {
             requestPermission();
@@ -57,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (songsList.size() == 0) {
-            noMusicTextView.setVisibility(View.VISIBLE);
+            TextView_noMusic.setVisibility(View.VISIBLE);
         } else {
             //recyclerview
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
