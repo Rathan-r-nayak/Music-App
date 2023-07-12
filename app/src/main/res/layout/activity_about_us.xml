@@ -33,6 +33,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="Our music player app offers a seamless and convenient way to enjoy your favorite music stored locally on your device. Access and play your entire music library with ease, right at your fingertips."
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="We prioritize simplicity and user-friendliness, providing an intuitive interface that allows you to navigate and find your desired songs effortlessly. Whether you're commuting, working out, or relaxing at home, our music player app ensures a smooth and enjoyable music listening experience."
+        android:layout_gravity="center_horizontal" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Developors"
         android:textColor="#00FFCC"
         android:layout_gravity="center_horizontal"
