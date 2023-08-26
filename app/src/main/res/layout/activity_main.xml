@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="Listen To Your Favorite Songs"
+        android:text="Listen To Your Favorite SONGS"
         android:textAllCaps="true"
         android:textColor="#00FFCC"
         android:textSize="18dp"
@@ -48,6 +48,7 @@
         android:layout_marginBottom="686dp"
         android:backgroundTint="@color/purple_700"
         android:text="About"
+        android:textColor="#00FFCC"
         android:textSize="10sp"
         app:cornerRadius="50dp" />
 

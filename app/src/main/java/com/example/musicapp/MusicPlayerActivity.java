@@ -62,7 +62,7 @@ public class MusicPlayerActivity extends AppCompatActivity {
                         musicIcon.setRotation(x++);
                     }else{
                         pausePlay.setImageResource(R.drawable.play);
-                        musicIcon.setRotation(0);
+                        musicIcon.setRotation(x);
                     }
 
                 }
